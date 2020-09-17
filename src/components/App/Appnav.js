@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import User from './user';
 import Chat from './chat';
 import Adduser from './Adduser';
+import SimpleLineIcon from 'react-native-vector-icons/SimpleLineIcons';
 
 const AppStack = createStackNavigator();
 
