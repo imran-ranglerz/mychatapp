@@ -1,10 +1,20 @@
-import React from 'react';
-import {View, Text} from 'react-native';
+import React, { useLayoutEffect } from 'react';
+import {View, Text, StyleSheet} from 'react-native';
+import SimpleLineIcon from 'react-native-vector-icons/SimpleLineIcons';
 
 
-export default function User(){
+export default function User({navigation}){
   return(
-   <View><Text>user</Text></View>
+   <View style={Style.main}><Text><SimpleLineIcon name="logout" size={24} color={'black'} />
+   </Text></View>
      
   );
-}
+} 
+
+const Style =StyleSheet.create({
+  main:{
+    flex:1,
+    justifyContent:'center',
+    alignItems:"center",  
+  }
+})
